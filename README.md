@@ -6,7 +6,7 @@ pip install -r requirements.txt
 
 ## Migraciones 
 
-Creacion de migraciones y exportacion de datos.
+Creacion de migraciones y importacion de datos.
 
 ```bash
 python manage.py migrate
