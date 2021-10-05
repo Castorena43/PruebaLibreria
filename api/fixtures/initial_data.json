@@ -1,0 +1,136 @@
+[
+    {
+      "model": "api.autor",
+      "pk": 1,
+      "fields": {
+        "nombre": "Joanne",
+        "apellido_paterno": "Rowling",
+        "apellido_materno": "Rowling",
+        "f_nacimiento": "1965-07-31",
+        "created_at":"2021-10-05",
+        "updated_at":"2021-10-05"
+      }
+    },
+    {
+        "model": "api.autor",
+        "pk": 2,
+        "fields": {
+          "nombre": "Suzanne",
+          "apellido_paterno": "Collins",
+          "apellido_materno": "Collins",
+          "f_nacimiento": "1962-08-10",
+          "created_at":"2021-10-05",
+          "updated_at":"2021-10-05"
+        }
+      },
+      {
+        "model": "api.autor",
+        "pk": 3,
+        "fields": {
+          "nombre": "Jamie",
+          "apellido_paterno": "McGuire",
+          "apellido_materno": "McGuire",
+          "f_nacimiento": "1978-11-06",
+          "created_at":"2021-10-05",
+          "updated_at":"2021-10-05"
+        }
+      },
+      {
+        "model": "api.genero",
+        "pk": 1,
+        "fields": {
+          "nombre":"Fantasia",
+          "descripcion":"Plantea escenarios imaginarios y situaciones prodigiosas protagonizadas por personajes heroicos, a menudo con poderes especiales, y la presencia de lo mágico y lo legendario. ",
+          "created_at":"2021-10-05",
+          "updated_at":"2021-10-05"
+        }
+      },
+      {
+        "model": "api.genero",
+        "pk": 2,
+        "fields": {
+          "nombre":"Aventura",
+          "descripcion":"La novela de aventuras es la esencia misma de la ficción, puesto que se gesta con el sencillo objetivo de entretener. La aventura es aquello que se opone a la rutina, a lo cotidiano, de ahí su valor. Es la capacidad del protagonista para enfrentarse a riesgos, misterios y peligros.",
+          "created_at":"2021-10-05",
+          "updated_at":"2021-10-05"
+        }
+      },
+      {
+        "model": "api.genero",
+        "pk": 3,
+        "fields": {
+          "nombre":"Drama",
+          "descripcion":"Trata situaciones generalmente no épicas en un contexto serio, con un tono y una orientación más susceptible de inspirar tristeza y compasión que risa o gracia. Sin embargo, desde el punto de vista etimológico, el drama evoca acción y diálogo.",
+          "created_at":"2021-10-05",
+          "updated_at":"2021-10-05"
+        }
+      },
+      {
+        "model":"api.libro",
+        "pk":1,
+        "fields":{
+          "titulo":"Harry Potter y la piedra filosofal",
+          "f_publicacion":"1997-06-26",
+          "descripcion":"El día de su cumpleaños, Harry Potter descubre que es hijo de dos conocidos hechiceros, de los que ha heredado poderes mágicos. Debe asistir a una famosa escuela de magia y hechicería, donde entabla una amistad con dos jóvenes que se convertirán en sus compañeros de aventura.",
+          "created_at":"2021-10-05",
+          "updated_at":"2021-10-05",
+          "autor_id":1
+        }
+      },
+      {
+        "model":"api.libro",
+        "pk":2,
+        "fields":{
+          "titulo":"Harry Potter y la camara de los secretos",
+          "f_publicacion":"2002-11-29",
+          "descripcion":"Terminado el verano, Harry no ve la hora de abandonar la casa de sus odiosos tíos. Inesperadamente se presenta en su dormitorio Dobby, un elfo doméstico, que le anuncia que correrá un gran peligro si vuelve a Hogwarts.",
+          "created_at":"2021-10-05",
+          "updated_at":"2021-10-05",
+          "autor_id":1
+        }
+      },
+      {
+        "model":"api.libro",
+        "pk":3,
+        "fields":{
+          "titulo":"Los juegos del hambre",
+          "f_publicacion":"2008-09-14",
+          "descripcion":"Los juegos del hambre se desarrolla en un país llamado Panem, lo que es en realidad una civilización postapocalíptica ubicada en lo que antes era América del Norte.",
+          "created_at":"2021-10-05",
+          "updated_at":"2021-10-05",
+          "autor_id":2
+        }
+      },
+      {
+        "model":"api.libro_genero",
+        "pk":1,
+        "fields":{
+          "libro_id": 1,
+          "genero_id": 1
+        }
+      },
+      {
+        "model":"api.libro_genero",
+        "pk":2,
+        "fields":{
+          "libro_id": 1,
+          "genero_id": 2
+        }
+      },
+      {
+        "model":"api.libro_genero",
+        "pk":3,
+        "fields":{
+          "libro_id": 2,
+          "genero_id": 1
+        }
+      },
+      {
+        "model":"api.libro_genero",
+        "pk":4,
+        "fields":{
+          "libro_id": 3,
+          "genero_id": 2
+        }
+      }
+  ]
